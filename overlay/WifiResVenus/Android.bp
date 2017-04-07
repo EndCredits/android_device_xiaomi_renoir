@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "WifiResRenoir",
+    product_specific: true
+}
