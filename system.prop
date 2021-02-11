@@ -10,6 +10,9 @@ persist.vendor.bt.a2dp.aac_whitelist=false
 # Charger
 ro.charger.enable_suspend=true
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # Netflix
 ro.netflix.bsp_rev=Q875-32774-1
 
