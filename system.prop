@@ -1,0 +1,17 @@
+# Audio
+ro.config.media_vol_default=8
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_default=9
+ro.config.vc_call_vol_steps=11
+
+# Bluetooth
+persist.vendor.bt.a2dp.aac_whitelist=false
+
+# Charger
+ro.charger.enable_suspend=true
+
+# Netflix
+ro.netflix.bsp_rev=Q875-32774-1
+
+# ParanoidDoze
+ro.sensor.pickup=xiaomi.sensor.pickup
