@@ -203,6 +203,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPARenoirFrameworks \
     NoCutoutOverlay \
     RenoirFrameworks \
     RenoirSettings \
