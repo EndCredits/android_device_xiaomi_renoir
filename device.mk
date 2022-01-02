@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.sf.color_mode=0 \
     vendor.display.comp_mask=1048576 \
-    vendor.display.use_smooth_motion=0
+    vendor.display.use_smooth_motion=1
 
 # DRM
 PRODUCT_PACKAGES += \
