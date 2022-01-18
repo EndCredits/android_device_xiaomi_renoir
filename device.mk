@@ -205,7 +205,8 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     RenoirFrameworksOverlay \
     RenoirSettingsOverlay \
-    RenoirSystemUIOverlay
+    RenoirSystemUIOverlay \
+    RenoirWifiOverlay
 
 # ParanoidDoze
 PRODUCT_PACKAGES += \
