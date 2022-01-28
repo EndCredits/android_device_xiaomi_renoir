@@ -708,6 +708,8 @@ vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_mp_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_p1_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_36_02_0a_p2_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_xiaomi_42_02_0b_mp_cmd_mode_dsc_dsi_panel.xml
+vendor/etc/snapdragon_color_libs_config.xml
+vendor/lib64/libmi-stc-HW-modulate.so
 
 # Display configs
 vendor/etc/display/advanced_sf_offsets.xml
