@@ -1,0 +1,1 @@
+require board=lahaina|shima|renoir|renoir_global|renoir_eea_global|renoir_jp_global|renoir_ru_global|renoir_tr_global|renoir_id_global|renoir_tw
