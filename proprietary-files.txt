@@ -806,6 +806,10 @@ vendor/etc/cacert_location.pem
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/sap.conf
+vendor/etc/seccomp_policy/gnss@2.0-base.policy
+vendor/etc/seccomp_policy/gnss@2.0-xtra-daemon.policy
+vendor/etc/seccomp_policy/gnss@2.0-xtwifi-client.policy
+vendor/etc/seccomp_policy/gnss@2.0-xtwifi-inet-agent.policy
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 vendor/etc/xtra_root_cert.pem
 vendor/etc/xtwifi.conf
