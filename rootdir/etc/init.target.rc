@@ -30,6 +30,8 @@
 import /vendor/etc/init/hw/init.qti.kernel.rc
 import /vendor/etc/init/hw/init.mi_thermald.rc
 import /vendor/etc/init/hw/init.batterysecret.rc
+import /vendor/etc/init/init.charge_logger.rc
+import /vendor/etc/init/hw/init.xiaomi.camera.rc
 
 on early-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/vendor_modprobe.sh
@@ -96,6 +98,8 @@ on late-fs
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
+    setprop persist.sys.offlinelog.logcat true
+    setprop persist.sys.offlinelog.logcatkernel true
     chmod 0644 /dev/elliptic0
     chmod 0644 /dev/elliptic1
     chmod 0660 /dev/ir_spi
@@ -109,6 +113,83 @@ on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system
     mkdir /mnt/vendor/persist/goodix 0770 system system
+    
+    mkdir /mnt/vendor/persist/qxwz 0770 gps system
+    mkdir /data/vendor/qxwz 0770 gps system
+    chmod 0660 /dev/al6021
+    chown system camera /dev/al6021
+
+    #add torch node for cit
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chown system system /sys/class/leds/led:torch_1/brightness
+    chown system system /sys/class/leds/led:torch_2/brightness
+    chown system system /sys/class/leds/led:torch_3/brightness
+    chown system system /sys/class/leds/led:flash_0/brightness
+    chown system system /sys/class/leds/led:flash_1/brightness
+    chown system system /sys/class/leds/led:flash_2/brightness
+    chown system system /sys/class/leds/led:flash_3/brightness
+    chown system system /sys/class/leds/led:switch_0/brightness
+    chown system system /sys/class/leds/led:switch_1/brightness
+    chown system system /sys/class/leds/led:switch_2/brightness
+    chown system system /sys/class/leds/led:switch_3/brightness
+    chown system system /sys/class/leds/led:switch_0/trigger
+    chown system system /sys/class/leds/led:switch_1/trigger
+    chown system system /sys/class/leds/led:switch_2/trigger
+    chown system system /sys/class/leds/led:switch_3/trigger
+    chown system system /sys/class/leds/flashlight/brightness
+
+    chmod 0664 /sys/class/leds/led:torch_0/brightness
+    chmod 0664 /sys/class/leds/led:torch_1/brightness
+    chmod 0664 /sys/class/leds/led:torch_2/brightness
+    chmod 0664 /sys/class/leds/led:torch_3/brightness
+    chmod 0664 /sys/class/leds/led:flash_0/brightness
+    chmod 0664 /sys/class/leds/led:flash_1/brightness
+    chmod 0664 /sys/class/leds/led:flash_2/brightness
+    chmod 0664 /sys/class/leds/led:flash_3/brightnesssss
+    chmod 0664 /sys/class/leds/led:switch_0/brightness
+    chmod 0664 /sys/class/leds/led:switch_1/brightness
+    chmod 0664 /sys/class/leds/led:switch_2/brightness
+    chmod 0664 /sys/class/leds/led:switch_3/brightness
+    chmod 0664 /sys/class/leds/led:switch_0/trigger
+    chmod 0664 /sys/class/leds/led:switch_1/trigger
+    chmod 0664 /sys/class/leds/led:switch_2/trigger
+    chmod 0664 /sys/class/leds/led:switch_3/trigger
+    chmod 0664 /sys/class/leds/flashlight/brightness
+
+on post-fs-data
+    chmod 0666 /dev/migt
+    restorecon /dev/migt
+    chmod 0777 /sys/module/migt/parameters/migt_freq
+    restorecon /sys/module/migt/parameters/migt_freq
+    chmod 0777 /sys/module/migt/parameters/migt_ms
+    restorecon /sys/module/migt/parameters/migt_ms
+    chmod 0777 /sys/module/migt/parameters/migt_thresh
+    restorecon /sys/module/migt/parameters/migt_thresh
+    chmod 0777 /sys/module/migt/parameters/boost_policy
+    restorecon /sys/module/migt/parameters/boost_policy
+    chmod 0777 /sys/module/migt/parameters/fps_variance_ratio
+    restorecon /sys/module/migt/parameters/fps_variance_ratio
+    chmod 0777 /sys/module/migt/parameters/super_task_max_num
+    restorecon /sys/module/migt/parameters/super_task_max_num
+    chmod 0777 /sys/module/migt/parameters/migt_ceiling_freq
+    restorecon /sys/module/migt/parameters/migt_ceiling_freq
+    chmod 0777 /sys/module/migt/parameters/stask_candidate_num
+    restorecon /sys/module/migt/parameters/stask_candidate_num
+    chmod 0666 /sys/module/migt/parameters/glk_disable
+    restorecon /sys/module/migt/parameters/glk_disable
+    chmod 0666 /sys/module/migt/parameters/glk_fbreak_enable
+    restorecon /sys/module/migt/parameters/glk_fbreak_enable
+    chmod 0666 /sys/module/migt/parameters/glk_freq_limit_walt
+    restorecon /sys/module/migt/parameters/glk_freq_limit_walt
+    chmod 0666 /sys/module/migt/parameters/glk_minfreq
+    restorecon /sys/module/migt/parameters/glk_minfreq
+    chmod 0666 /sys/module/migt/parameters/glk_maxfreq
+    restorecon /sys/module/migt/parameters/glk_maxfreq
+    chmod 0666 /sys/module/migt/parameters/force_stask_to_big
+    restorecon /sys/module/migt/parameters/force_stask_to_big
+    chmod 0666 /sys/module/migt/parameters/force_reset_runtime
+    restorecon /sys/module/migt/parameters/force_reset_runtime
+    mkdir /data/vendor/misc/display 0771 system system
 
 on early-boot
     # Enable WLAN cold boot calibration
