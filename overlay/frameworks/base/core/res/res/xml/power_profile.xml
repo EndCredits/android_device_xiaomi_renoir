@@ -2,9 +2,9 @@
 <device name="Android">
     <item name="none">0
     </item>
-    <item name="screen.on">103.76
+    <item name="screen.on.display0">103.76
     </item>
-    <item name="screen.full">448.43
+    <item name="screen.full.display0">448.43
     </item>
     <array name="cpu.clusters.cores">
         <value>4
