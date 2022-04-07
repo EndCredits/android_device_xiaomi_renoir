@@ -340,4 +340,11 @@
         <item>960</item>  <!-- sensorLocationY -->
         <item>200</item>  <!-- sensorRadius -->
     </array>
+
+    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
+
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">90</integer>
+    
 </resources>
