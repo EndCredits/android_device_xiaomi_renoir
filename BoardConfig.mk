@@ -35,5 +35,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 114001162240
 # Vibrator
 SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Include proprietary files
 include vendor/xiaomi/renoir/BoardConfigVendor.mk
