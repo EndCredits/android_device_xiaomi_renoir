@@ -291,6 +291,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AOSPARenoirFrameworksOverlay \
     AOSPARenoirCSOTFrameworksOverlay \
+    RenoirCarrierConfigOverlay \
     NoCutoutOverlay \
     RenoirFrameworksOverlay \
     RenoirSettingsOverlay \
