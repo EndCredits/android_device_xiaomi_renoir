@@ -83,6 +83,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+KERNEL_CUSTOM_LLVM := true
 KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig vendor/xiaomi_QGKI.config vendor/renoir_QGKI.config
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7350
 
