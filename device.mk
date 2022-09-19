@@ -275,6 +275,9 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/media_codecs_with_dolby_shima.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_with_dolby_shima.xml
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
