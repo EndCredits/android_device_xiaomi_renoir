@@ -146,12 +146,24 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_PACKAGES += \
     disable_configstore
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/display_id_4630946480857061762.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061762.xml \
+    $(LOCAL_PATH)/configs/display/display_id_4630946622257352578.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946622257352578.xml
+
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.sf.color_mode=0 \
     ro.sf.force_hwc_brightness=1 \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.set_idle_timer_ms=500 \
-    ro.surface_flinger.set_touch_timer_ms=800
+    ro.surface_flinger.set_touch_timer_ms=800 \
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.sf.use_latest_hwc_vsync_period=0
+
+# TODO shim brightness funcs in sdmcore
+# PRODUCT_SYSTEM_PROPERTIES += \
+#     ro.sf.force_hwc_brightness=1
 
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
