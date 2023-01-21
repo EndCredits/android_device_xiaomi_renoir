@@ -13,5 +13,8 @@
     <dimen name="status_bar_height_portrait">@dimen/status_bar_height_default</dimen>
 
     <!-- Radius of the software rounded corners of the display in it's natural orientation-->
-    <dimen name="rounded_corner_radius">96px</dimen>
+    <dimen name="rounded_corner_radius">126px</dimen>
+
+    <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
+    <dimen name="rounded_corner_radius_adjustment">30px</dimen>
 </resources>
