@@ -205,11 +205,11 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPARenoirFrameworks \
+    AOSPARenoirFrameworksOverlay \
     NoCutoutOverlay \
-    RenoirFrameworks \
-    RenoirSettings \
-    RenoirSystemUI
+    RenoirFrameworksOverlay \
+    RenoirSettingsOverlay \
+    RenoirSystemUIOverlay
 
 # ParanoidDoze
 PRODUCT_PACKAGES += \

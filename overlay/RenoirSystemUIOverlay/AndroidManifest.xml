@@ -14,10 +14,10 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.renoir">
+    package="com.android.systemui.renoir.overlay">
 
     <overlay
         android:isStatic="true"
         android:priority="850"
-        android:targetPackage="android" />
+        android:targetPackage="com.android.systemui" />
 </manifest>
