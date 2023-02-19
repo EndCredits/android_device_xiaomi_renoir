@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2021 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,24 +14,19 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings;
+package org.lineageos.settings.display;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
+import android.os.Bundle;
 
-import org.lineageos.settings.dirac.DiracUtils;
-import org.lineageos.settings.thermal.ThermalUtils;
+import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
+import com.android.settingslib.collapsingtoolbar.R;
 
-public class BootCompletedReceiver extends BroadcastReceiver {
-
+public class LcdFeaturesPreferenceActivity extends CollapsingToolbarBaseActivity {
     @Override
-    public void onReceive(final Context context, Intent intent) {
-        // Dirac
-        DiracUtils.initialize(context);
-
-        // Thermal Profiles
-        ThermalUtils.startService(context);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        getFragmentManager().beginTransaction()
+                .replace(R.id.content_frame, new LcdFeaturesPreferenceFragment())
+                .commit();
     }
 }
