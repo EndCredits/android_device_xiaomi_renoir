@@ -1,4 +1,4 @@
-# Device proprietary files - from lisa MIUI V13.0.4.0.SKOMIXM package, unless pinned
+# Device proprietary files - from renoir MIUI V14.0.6.0.TKICNXM package, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
