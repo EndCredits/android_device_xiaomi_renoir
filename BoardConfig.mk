@@ -196,6 +196,7 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
 include device/xiaomi/renoir/sepolicy/K9-sepolicy.mk
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
