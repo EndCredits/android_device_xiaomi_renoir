@@ -109,21 +109,24 @@ void vendor_load_properties() {
     if (region == "GL") {
         model = "M2101K9G";
         device = "renoir";
-        fingerprint = "Xiaomi/renoir_eea/renoir:12/RKQ1.201112.002/V13.0.5.0.SKIEUXM:user/release-keys";
-        description = "renoir_eea-user 12 RKQ1.201112.002 V13.0.5.0.SKIEUXM release-keys";
+        fingerprint = "Xiaomi/renoir_eea/renoir:13/RKQ1.211001.001/14.0.5.0.TKIEUXM:user/release-keys";
+        description = "renoir_eea-user 12 RKQ1.211001.001 V14.0.5.0.TKIEUXM release-keys";
         mod_device = "renoir_eea_global";
+        security_patch = "2023-01-01"
     } else if (region == "JP") {
         model = "M2101K9R";
         device = "renoir";
-        fingerprint = "Xiaomi/renoir_jp/renoir:12/RKQ1.201112.002/V13.0.3.0.SKIJPXM:user/release-keys";
-        description = "renoir-user 12 RKQ1.201112.002 V13.0.3.0.SKIJPXM release-keys";
+        fingerprint = "Xiaomi/renoir_jp/renoir:13/RKQ1.211001.001/V14.0.1.0.TKIJPXM:user/release-keys";
+        description = "renoir-user 13 RKQ1.211001.001 V14.0.1.0.TKIJPXM release-keys";
         mod_device = "renoir_jp_global";
+        security_patch = "2023-01-01"
     } else {
-        model = "M2101K9G";
+        model = "M2101K9C";
         device = "renoir";
-        fingerprint = "Xiaomi/renoir/renoir:12/RKQ1.201112.002/V13.0.4.0.SKIMIXM:user/release-keys";
-        description = "renoir-user 12 RKQ1.201112.002 V13.0.4.0.SKIMIXM release-keys";
-        mod_device = "renoir_global";
+        fingerprint = "Xiaomi/renoir/renoir:13/RKQ1.211001.001/V14.0.6.0.TKICNXM:user/release-keys";
+        description = "renoir-user 13 RKQ1.211001.001 V14.0.6.0.TKICNXM release-keys";
+        mod_device = "renoir";
+        security_patch = "2023-01-01"
     }
 
     set_ro_build_prop("fingerprint", fingerprint);
@@ -133,5 +136,6 @@ void vendor_load_properties() {
     if (mod_device != "") {
         property_override("ro.product.mod_device", mod_device.c_str());
     }
+    property_override("ro.vendor.build.security_patch", security_patch.c_str());
     load_dalvik_properties();
 }
