@@ -5,33 +5,13 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Radius of the software rounded corners at the top of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_top">102px</dimen>
-
-    <!-- Radius of the software rounded corners at the bottom of the display in its natural
-        orientation. If zero, the value of rounded_corner_radius is used. -->
-    <dimen name="rounded_corner_radius_bottom">102px</dimen>
-
-    <!-- The default height of the status bar used in {@link SystemBarUtils#getStatusBarHeight} to
-         calculate the status bar height. -->
-    <dimen name="status_bar_height_default">30dp</dimen>
-
-    <!-- Some apps still use this dimen to size their layout. That is totally fine in theory
-         because the framework links this dimen to status_bar_height_portrait by default. 
-         The problem is that often times these apps do not take status_bar_padding_top into
-         account, so as a result, their view is too high and cuts into the actual statusbar area.
-         Deliberately give this dimen a value that is approximately status_bar_height_portrait +
-         status_bar_padding_top in dp so that these apps can look normal again. -->
-    <dimen name="status_bar_height">46dp</dimen>
-
-    <!-- Height of the status bar in portrait.
+    <!-- Height of the status bar.
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
-         -->
-    <dimen name="status_bar_height_portrait">105px</dimen>
+    -->
+    <dimen name="status_bar_height_default">104px</dimen>
+    <dimen name="status_bar_height_landscape">78px</dimen>
+    <dimen name="status_bar_height_portrait">@dimen/status_bar_height_default</dimen>
 
-    <!-- Height of area above QQS where battery/time go.
-         Do not read this dimen directly. Use {@link SystemBarUtils#getQuickQsOffsetHeight} instead.
-         -->
-    <dimen name="quick_qs_offset_height">58dp</dimen>
+    <!-- Radius of the software rounded corners of the display in it's natural orientation-->
+    <dimen name="rounded_corner_radius">96px</dimen>
 </resources>
