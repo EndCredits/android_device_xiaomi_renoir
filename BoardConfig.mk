@@ -16,6 +16,9 @@ TARGET_BOOTLOADER_BOARD_NAME := renoir
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_renoir
 TARGET_RECOVERY_DEVICE_MODULES := libinit_renoir
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/renoir_QGKI.config
 
