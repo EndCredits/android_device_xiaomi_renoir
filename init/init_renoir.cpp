@@ -124,10 +124,10 @@ void vendor_load_properties() {
     } else {
         model = "M2101K9C";
         device = "renoir";
-        fingerprint = "Xiaomi/renoir/renoir:13/RKQ1.211001.001/V14.0.6.0.TKICNXM:user/release-keys";
-        description = "renoir-user 13 RKQ1.211001.001 V14.0.6.0.TKICNXM release-keys";
+        fingerprint = "Xiaomi/renoir/renoir:13/RKQ1.211001.001/V14.0.8.0.TKICNXM:user/release-keys";
+        description = "renoir-user 13 RKQ1.211001.001 V14.0.8.0.TKICNXM release-keys";
         mod_device = "renoir";
-        security_patch = "2023-01-01";
+        security_patch = "2023-03-01";
     }
 
     set_ro_build_prop("fingerprint", fingerprint);
