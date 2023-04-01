@@ -113,18 +113,20 @@ void vendor_load_properties() {
         description = "renoir_eea-user 11 RKQ1.201112.002 V12.5.6.0.RKIEUXM release-keys";
         mod_device = "renoir_eea_global";
     } else if (region == "JP") {
-            model = "M2101K9R";
-            device = "renoir";
-            fingerprint = "Xiaomi/renoir_jp/renoir:11/RKQ1.201112.002/V12.5.4.0.RKIJPXM:user/release-keys";
-            description = "renoir-user 11 RKQ1.201112.002 V12.5.4.0.RKIJPXM release-keys";
-            mod_device = "renoir_jp_global";
-        } else {
-                model = "M2101K9G";
-                device = "renoir";
-                fingerprint = "Xiaomi/renoir/renoir:11/RKQ1.201112.002/V12.5.5.0.RKIMIXM:user/release-keys";
-                description = "renoir-user 11 RKQ1.201112.002 V12.5.5.0.RKIMIXM release-keys";
-                mod_device = "renoir_global";
-        }
+        model = "M2101K9R";
+        device = "renoir";
+        fingerprint = "Xiaomi/renoir_jp/renoir:13/RKQ1.211001.001/V14.0.1.0.TKIJPXM:user/release-keys";
+        description = "renoir-user 13 RKQ1.211001.001 V14.0.1.0.TKIJPXM release-keys";
+        mod_device = "renoir_jp_global";
+        security_patch = "2023-01-01";
+    } else {
+        model = "M2101K9C";
+        device = "renoir";
+        fingerprint = "Xiaomi/renoir/renoir:13/RKQ1.211001.001/V14.0.8.0.TKICNXM:user/release-keys";
+        description = "renoir-user 13 RKQ1.211001.001 V14.0.8.0.TKICNXM release-keys";
+        mod_device = "renoir";
+        security_patch = "2023-03-01";
+    }
 
     set_ro_build_prop("fingerprint", fingerprint);
     set_ro_product_prop("device", device);
