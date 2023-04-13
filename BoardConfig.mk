@@ -19,6 +19,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_renoir
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/manifest.xml
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/hidl/framework_compatibility_matrix.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/renoir_QGKI.config
 
