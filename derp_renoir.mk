@@ -20,8 +20,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2101K9C
 PRODUCT_NAME := derp_renoir
 
-# PixelExperience Stuffs
+# DerpFest Stuffs
 TARGET_BOOT_ANIMATION_RES := 1080
+DERP_RELEASE := true
+DERP_BUILDTYPE := Official
 
 PRODUCT_SYSTEM_NAME := renoir
 PRODUCT_SYSTEM_DEVICE := renoir
