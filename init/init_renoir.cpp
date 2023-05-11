@@ -107,21 +107,7 @@ void vendor_load_properties() {
     std::string mod_device;
     std::string security_patch;
 
-    if (region == "GL") {
-        model = "M2101K9G";
-        device = "renoir";
-        fingerprint = "Xiaomi/renoir_eea/renoir:13/RKQ1.211001.001/14.0.5.0.TKIEUXM:user/release-keys";
-        description = "renoir_eea-user 12 RKQ1.211001.001 V14.0.5.0.TKIEUXM release-keys";
-        mod_device = "renoir_eea_global";
-        security_patch = "2023-01-01";
-    } else if (region == "JP") {
-        model = "M2101K9R";
-        device = "renoir";
-        fingerprint = "Xiaomi/renoir_jp/renoir:13/RKQ1.211001.001/V14.0.1.0.TKIJPXM:user/release-keys";
-        description = "renoir-user 13 RKQ1.211001.001 V14.0.1.0.TKIJPXM release-keys";
-        mod_device = "renoir_jp_global";
-        security_patch = "2023-01-01";
-    } else {
+    if (region == "CN") {
         model = "M2101K9C";
         device = "renoir";
         fingerprint = "Xiaomi/renoir/renoir:13/RKQ1.211001.001/V14.0.8.0.TKICNXM:user/release-keys";
