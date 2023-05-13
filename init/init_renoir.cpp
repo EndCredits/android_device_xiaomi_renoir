@@ -114,15 +114,15 @@ void vendor_load_properties() {
         description = "renoir-user 13 RKQ1.211001.001 V14.0.8.0.TKICNXM release-keys";
         mod_device = "renoir";
         security_patch = "2023-03-01";
-    }
 
-    set_ro_build_prop("fingerprint", fingerprint);
-    set_ro_product_prop("device", device);
-    set_ro_product_prop("model", model);
-    property_override("ro.build.description", description.c_str());
-    if (mod_device != "") {
-        property_override("ro.product.mod_device", mod_device.c_str());
+        set_ro_build_prop("fingerprint", fingerprint);
+        set_ro_product_prop("device", device);
+        set_ro_product_prop("model", model);
+        property_override("ro.build.description", description.c_str());
+        if (mod_device != "") {
+            property_override("ro.product.mod_device", mod_device.c_str());
+        }
+        property_override("ro.vendor.build.security_patch", security_patch.c_str());
     }
-    property_override("ro.vendor.build.security_patch", security_patch.c_str());
     load_dalvik_properties();
 }
