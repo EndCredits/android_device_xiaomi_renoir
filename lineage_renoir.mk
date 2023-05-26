@@ -17,6 +17,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from MindTheGapps
 ifeq ($(WITH_GAPPS), true)
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+PRODUCT_SYSTEM_PROPERTIES += ro.updater.hanavariant=gapps
+else
+PRODUCT_SYSTEM_PROPERTIES += ro.updater.hanavariant=vanilla
 endif
 
 PRODUCT_BRAND := Xiaomi
