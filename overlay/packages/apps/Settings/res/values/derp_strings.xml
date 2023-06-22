@@ -6,7 +6,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- DerpFest maintainer -->
-    <string name="maintainer_name" translatable="false">彼岸花开 (aka. Hana/EndCredits)</string>
+    <string name="maintainer_name" translatable="false">流苏 (Hana/EndCredits)</string>
     <string name="maintainer_telegram" translatable="false">https://t.me/EndCredits</string>
 
 </resources>
