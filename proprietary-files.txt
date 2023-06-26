@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from renoir V14.0.8.0.TKICNXM 
+# All unpinned blobs below are extracted from renoir V14.0.9.0.TKICNXM 
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -584,6 +584,7 @@ vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/lib64/libnanopb.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensorcal.so
+vendor/lib64/libsensor_cal_v2.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_api.so
 vendor/lib64/libsns_fastRPC_util.so
@@ -600,6 +601,8 @@ vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.detect.so
 
 # Sensors configs
+vendor/etc/sensor_diag.cfg
+vendor/etc/sensors/calibratedCheck.json
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/bu27030_0_back.json
 vendor/etc/sensors/config/icm4x6xx_0.json
