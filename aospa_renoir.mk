@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from renoir device
 $(call inherit-product, device/xiaomi/renoir/device.mk)
 
+# Inherit from Paranoid Android
+$(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := renoir
 PRODUCT_MANUFACTURER := Xiaomi
