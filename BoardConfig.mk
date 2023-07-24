@@ -12,6 +12,9 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 # Firmware
 -include vendor/xiaomi-firmware/renoir/BoardConfigVendor.mk
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := renoir,renoir_global,renoir_jp,renoir_ru,renoir_eea_global
+
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := renoir
 
