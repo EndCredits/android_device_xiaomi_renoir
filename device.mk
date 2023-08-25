@@ -5,6 +5,8 @@
 #
 
 # Inherit from sm8350-common
+COMMON_PATH := device/xiaomi/sm8350-common/
+
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
 # Audio
@@ -28,6 +30,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     WifiResRenoir
+
+# Power
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/power/powerhint_shima.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
