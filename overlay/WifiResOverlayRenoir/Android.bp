@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "WifiResRenoir",
+    name: "WifiResOverlayRenoir",
     product_specific: true
 }
