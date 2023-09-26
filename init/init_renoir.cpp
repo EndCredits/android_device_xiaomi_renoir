@@ -110,10 +110,10 @@ void vendor_load_properties() {
     if (region != "CN") {
         model = "M2101K9G";
         device = "renoir_global";
-        fingerprint = "Xiaomi/renoir_global/renoir:13/TKQ1.220829.002/V14.0.4.0.TKIMIXM:user/release-keys";
-        description = "renoir_global-user 13 TKQ1.220829.002 V14.0.4.0.TKIMIXM release-keys";
+        fingerprint = "Xiaomi/renoir_global/renoir:13/RKQ1.211001.001/V14.0.6.0.TKIMIXM:user/release-keys";
+        description = "renoir_global-user 13 RKQ1.211001.001 V14.0.6.0.TKIMIXM release-keys";
         mod_device = "renoir_global";
-        security_patch = "2023-05-01";
+        security_patch = "2023-07-01";
 
         set_ro_build_prop("fingerprint", fingerprint);
         set_ro_product_prop("device", device);
