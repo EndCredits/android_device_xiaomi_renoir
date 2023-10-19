@@ -560,6 +560,8 @@ vendor/lib/libcodec2_soft_common.so
 vendor/lib/libdolbyottcameracontrol.so
 vendor/lib/libdovi.so
 vendor/lib/libsfplugin_ccodec_utils.so
+vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0.stock.so
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk.stock.so
 
 # Media (VPU firmware)
 vendor/firmware/vpu20_2v.b00

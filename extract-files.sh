@@ -19,6 +19,13 @@ function blob_fixup() {
         vendor/lib64/vendor.xiaomi.hardware.cameraperf@1.0-impl.so)
             "${SIGSCAN}" -p "21 00 80 52 7c 00 00 94" -P "21 00 80 52 1F 20 03 D5" -f "${2}"
             ;;
+        vendor/lib/libcodec2_hidl@1.0.stock.so)
+            patchelf --set-soname libcodec2_hidl@1.0.stock.so "${2}"
+            patchelf --replace-needed libcodec2_vndk.so libcodec2_vndk.stock.so "${2}"
+            ;;
+        vendor/lib/libcodec2_vndk.stock.so)
+            patchelf --set-soname libcodec2_vndk.stock.so "${2}"
+            ;;
     esac
 }
 
