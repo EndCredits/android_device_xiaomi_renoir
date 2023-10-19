@@ -30,7 +30,7 @@ PRODUCT_VENDOR_KERNEL_HEADERS := $(TARGET_KERNEL_DIR)/kernel-headers
 
 # Overlays
 PRODUCT_PACKAGES += \
-    DerpSettingsResOverlayRenoir \
+    AOSPARenoirFrameworksResOverlay \
     FrameworksResOverlayRenoir \
     SettingsProviderResOverlayRenoir \
     SettingsResOverlayRenoir \
