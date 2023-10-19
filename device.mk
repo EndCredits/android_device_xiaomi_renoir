@@ -20,13 +20,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/display_id_4630946545580055170.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/display_id_4630946545580055170.xml
 
 # Kernel
-TARGET_KERNEL_DIR ?= device/xiaomi/renoir-kernel
-LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/kernel
-
-PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
-
-# Kernel Headers
-PRODUCT_VENDOR_KERNEL_HEADERS := $(TARGET_KERNEL_DIR)/kernel-headers
+KERNEL_MODULES_INSTALL := dlkm
+KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/renoir/$(KERNEL_MODULES_INSTALL)/lib/modules
 
 # Overlays
 PRODUCT_PACKAGES += \
