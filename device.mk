@@ -25,7 +25,7 @@ KERNEL_MODULES_OUT := $(OUT_DIR)/target/product/renoir/$(KERNEL_MODULES_INSTALL)
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPARenoirFrameworksResOverlay \
+    AOSPARenoirFramerowksResOverlay \
     FrameworksResOverlayRenoir \
     SettingsProviderResOverlayRenoir \
     SettingsResOverlayRenoir \
