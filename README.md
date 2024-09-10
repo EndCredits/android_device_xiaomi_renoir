@@ -1,6 +1,25 @@
 Copyright (C) 2021 The LineageOS Project
 
 Device configuration for Xiaomi Mi 11 Lite 5G
+
+Useful Links for the one wants to build ROMs:
+
+ Device Tree && Kernel && Vendor links:
+ - [device/xiaomi/sm8350-common](https://github.com/EndCredits/android_device_xiaomi_sm8350-common)
+ - [device/xiaomi/renoir](https://github.com/EndCredits/android_device_xiaomi_renoir)
+ - [kernel/xiaomi/sm8350](https://github.com/EndCredits/android_kernel_xiaomi_sm8350)
+ - [vendor/xiaomi/sm8350-common](https://gitlab.com/EndCredits/android_vendor_xiaomi_sm8350-common)
+ - [vendor/xiaomi/renoir](https://gitlab.com/EndCredits/android_vendor_xiaomi_renoir)
+
+ Build environment configuration:
+
+ - [EndCredits/Docker_build_AOSP](https://github.com/EndCredits/Docker_build_AOSP)
+
+
+Q: Why using GitLab to upload vendors instead of Github?
+
+A: According to the report from Shenzhen SenseTime Technology Co., Ltd., my vendor repository has been blocked since May 2023. Reported [here](https://github.com/github/dmca/blob/master/2023/05/2023-05-02-sensetime.md)
+
 =========================================
 
 The Xiaomi Mi 11 Lite 5G (codenamed _"renoir"_) is a mid-range smartphone from Xiaomi.
