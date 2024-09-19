@@ -10,6 +10,7 @@ Useful Links for the one wants to build ROMs:
  - [kernel/xiaomi/sm8350](https://github.com/EndCredits/android_kernel_xiaomi_sm8350)
  - [vendor/xiaomi/sm8350-common](https://gitlab.com/EndCredits/android_vendor_xiaomi_sm8350-common)
  - [vendor/xiaomi/renoir](https://gitlab.com/EndCredits/android_vendor_xiaomi_renoir)
+ - [hardware/xiaomi](https://github.com/EndCredits/android_hardware_xiaomi)
 
  Build environment configuration:
 
