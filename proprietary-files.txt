@@ -341,6 +341,7 @@ vendor/lib64/libarcsoft_qnnhtp.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libbeauty_face_interface.so
 vendor/lib64/libbitmlengine.so
+vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libblink.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcamera_dirty.so
