@@ -523,7 +523,7 @@ vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
 # Jsoncpp - from prebuilt vndksp lib v30
-vendor/lib64/libjsoncpp-v30.so;FIX_SONAME|3deffaf0527c89ab2bcdc7cb10f452c58af3b566
+vendor/lib64/libjsoncpp-v30.so;FIX_SONAME|882bb1dc1a359ec2746481560312b2bc7ed10199
 
 # Media (VPU firmware)
 vendor/firmware/vpu20_2v.b00
