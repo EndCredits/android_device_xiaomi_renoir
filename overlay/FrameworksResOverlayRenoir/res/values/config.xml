@@ -344,10 +344,18 @@
          from the HAL in the future. -->
     <array name="config_sfps_sensor_props" translatable="false">
         <item>@array/config_sfps_sensor_props_0</item>
+        <item>@array/config_sfps_sensor_props_1</item>
     </array>
 
     <array name="config_sfps_sensor_props_0" translatable="false">
-        <item></item>     <!-- displayId -->
+        <item>local:4630946480857061762</item>     <!-- displayId -->
+        <item>1080</item> <!-- sensorLocationX -->
+        <item>960</item>  <!-- sensorLocationY -->
+        <item>200</item>  <!-- sensorRadius -->
+    </array>
+
+    <array name="config_sfps_sensor_props_1" translatable="false">
+        <item>local:4630946545580055170</item>     <!-- displayId -->
         <item>1080</item> <!-- sensorLocationX -->
         <item>960</item>  <!-- sensorLocationY -->
         <item>200</item>  <!-- sensorRadius -->
