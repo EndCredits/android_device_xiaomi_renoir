@@ -709,7 +709,9 @@ vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
 vendor/etc/thermal-youtube.conf
-vendor/etc/thermald-devices.conf
+
+# Thermal config - from modified
+vendor/etc/thermald-devices.conf|4eaa4f6aeed49980a6d654169f51dffbe26505d5
 
 # Touchscreen firmware
 vendor/firmware/goodix_gt9897t_cfg_k9.bin
